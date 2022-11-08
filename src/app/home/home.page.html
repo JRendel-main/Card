@@ -1,20 +1,28 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+  <div class="mainDiv">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-grid>
+            <ion-row><br><br><br><br><br><br><br><br><br><br></ion-row>
+            <ion-row ion-align-items-start>
+              <ion-col></ion-col>
+              <ion-col class="mainText">
+                <ion-label>
+                  <p>Click button below to see cards of students</p>
+                </ion-label>
+                <br>
+                <ion-button class="btn" shape="round" size="auto" fill="outline" (click)="btnClicked()" routerLink="/profiles" color="dark">
+                  See Cards
+                <ion-icon name="caret-forward-outline"></ion-icon>
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>

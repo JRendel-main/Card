@@ -1,0 +1,33 @@
+ion-button {
+    //remove border
+    --border-width: 0px;
+    --border-radius: 0px;
+    --border-style: none;
+    --border-color: none;
+    //remove shadow
+    --box-shadow: none;
+    //remove ripple effect
+    --background-activated: none;
+    //remove background
+    --background: none;
+    //remove text
+    --color: none;
+}
+p.titleText {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    text-align: center;
+}
+ion-content {
+    --background: url(../../assets/images/background.jpg) no-repeat center/cover fixed;
+}
+ion-card {
+    --background: #ffffff;
+    --border-radius: 30px;
+    --box-shadow: none;
+    --border-style: round;
+    --border-color: none;
+    --border-width: 0px;
+    height: 50% 50% 50%;
+}
